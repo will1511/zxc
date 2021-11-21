@@ -68,6 +68,6 @@ app.use('/', indexRouter);
 // 	response.end();
 // });
 
-app.listen(process.env.PORT || 3000, () => {
-    console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
-  });
+app.listen(process.env.PORT || 4000, () => {
+    console.log("server is active");
+});

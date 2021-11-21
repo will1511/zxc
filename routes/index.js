@@ -8,9 +8,7 @@ const ObjectId = require('mongodb').ObjectID;
 
 const router = express.Router()
 
-router.get('/', (req, res) => {
-        res.render('pages/index')
-    })
+
 
 MongoClient.connect("mongodb://clara:clara123@cluster0-shard-00-00.mkqbl.mongodb.net:27017,cluster0-shard-00-01.mkqbl.mongodb.net:27017,cluster0-shard-00-02.mkqbl.mongodb.net:27017/myFirstDatabase?ssl=true&replicaSet=atlas-11ixiz-shard-0&authSource=admin&retryWrites=true&w=majority", { useUnifiedTopology: true })
 .then(client => {
@@ -22,7 +20,9 @@ MongoClient.connect("mongodb://clara:clara123@cluster0-shard-00-00.mkqbl.mongodb
     const adminDB = db.collection('Admin');
     const artikelDB = db.collection('Artikel');
 
-    
+    router.get('/', (req, res) => {
+        res.render('pages/index')
+    })
     
     router.get(('/artikel'), async (req, res) => {
         const data = await artikelDB.find().toArray();
