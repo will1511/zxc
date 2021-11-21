@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HaloDoc || Tanya Dokter, Periksa Kesehatan Sendiri</title>
+    
+    <link rel="stylesheet" href="css/style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+    <%- include('../layouts/navbar.ejs'); %>
+
+<div  class="container">
+            <div class="text-center">
+                <h1>Spesialization Doctor</h1>
+                <p style="font-size: 16pt;"><i>Find a doctor to answer medical questions, for you.</i></p>
+                <hr size="5px" style="background-color: black;"><br>
+                <br>
+
+                <div >
+                    <div class="row justify-content-center">
+                        <div class="col-sm-4 col-md-2 mb-2 sehat" style="margin: 10px;">
+                            <a href="/listdokter" style="color: black;">
+                                <div class="card-0" >
+                                    <img src="img/dokterumum.png" alt="" class="img-fluid">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Dokter Umum</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <div class="col-sm-4 col-md-2 mb-2 sehat" style="margin: 10px;">
+                            <a href="/listdokter" style="color: black;">
+                                <div class="card-0">
+                                    <img src="img/dokterumum.png" alt="" class="img-fluid">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Dokter Gigi</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-4 col-md-2 mb-2 sehat" style="margin: 10px;">
+                            <a href="/listdokter" style="color: black;">
+                                <div class="card-0">
+                                    <img src="img/dokterumum.png" alt="" class="img-fluid">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Dokter Jantung</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-3 col-md-2 mb-2 sehat" style="margin: 10px;">
+                            <a href="/listdokter" style="color: black;">
+                                <div class="card-0">
+                                    <img src="img/dokterumum.png" alt="" class="img-fluid">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Dokter Kulit</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-3 col-md-2 mb-2 sehat" style="margin: 10px;">
+                            <a href="/listdokter" style="color: black;">
+                                <div class="card-0">
+                                    <img src="img/dokterumum.png" alt="" class="img-fluid">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Dokter Kandungan</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-3 col-md-2 mb-2 sehat" style="margin: 10px;">
+                            <a href="/listdokter" style="color: black;">
+                                <div class="card-0">
+                                    <img src="img/dokterumum.png" alt="" class="img-fluid">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Dokter Mata</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-3 col-md-2 mb-2 sehat" style="margin: 10px;">
+                            <a href="/listdokter" style="color: black;">
+                                <div class="card-0">
+                                    <img src="img/dokterumum.png" alt="" class="img-fluid">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Dokter Hewan</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr size="5px" style="background-color: black;"><br>
+            <div class="card shadow p-3 mb-5 bg-light rounded-3" style="width: auto; height: auto;">
+                <div class="container">
+                    <div>
+                        <h6 class="title">Tanya Dokter Umum dan Spesialis di Halodoc</h6>
+                        <p class="content"><small class="text-muted">Kini kamu bisa tanya dokter online langsung dari website Halodoc. Layanan kesehatan online terpercaya di Indonesia ini memiliki daftar dokter pilihan terbaik di bidangnya masing-masing. Mulai dari dokter umum yang bisa membantu menjawab keluhan ringan, hingga dokter spesialis berpengalaman dan terpercaya Terdiri dari banyak jenis dokter spesialis. Mulai dari dokter gigi, ahli kebidanan, spesialis penyakit dalam, spesialis mata, hingga dokter spesialis jantung. Semua dokter akan memberikan layanan kesehatan yang kamu butuhkan. untuk memberi jalan keluar atas masalah kesehatan yang lebih berat. Jangan tunggu hingga parah, langsung konsultasikan kondisi kesehatan kamu agar bisa segera ditangani oleh yang berpengalaman hanya di Halodoc!</small></p>
+                    </div>
+                    <div>
+                        <h6 class="title">Mengapa Pilih Tanya Dokter Halodoc?</h6>
+                        <p class="content"><small class="text-muted">Memilih Tanya Dokter Halodoc akan mempertemukan kamu dengan tenaga medis profesional secara cepat. Tidak perlu repot mencari dokter terdekat dan harus keluar rumah. Halodoc memastikan kamu mendapatkan pelayanan terbaik dari tim dokter spesialis di Indonesia yang terhubung langsung dari halaman website Halodoc.
+                            Fasilitas ini bisa kamu gunakan untuk menjawab pelbagai masalah kesehatan yang sering dialami seperti Gejala tipes, Anemia, dan Hepatitis. Selain itu kamu juga bisa memastikan kondisi kesehatan kamu yang berkaitan dengan organ penting seperti kondisi pneumonia dan bronkitis di paru-paru. Masalah kesehatan yang kerap kali jadi pertanyaan misalnya masalah kista dan kehamilan bagi wanita, juga kesehatan keluarga kamu yang berkaitan dengan gejala usus buntu, Asam lambung, hingga batu ginjal.
+                            Kamu bisa melakukan konsultasi dan diskusi kesehatan dengan dokter dan psikolog, menanyakan tips diet, rekomendasi obat, rujukan ke rumah sakit, terapi, hingga rekomendasi gaya hidup yang baik sebagai upaya pencegahan terhadap penyakit maupun kondisi kesehatan lainnya.</small></p>
+                    </div>
+                    <div class="tab">
+                        <div>
+                            <h6 class = "title">Memiliki dokter berpengalaman di seluruh Indonesia</h6>
+                            <p class="content"><small class="text-muted">Dokter Online Halodoc bukanlah praktisi kesehatan sembarangan. Kamu bisa terhubung langsung dengan cepat dan mudah, serta tidak perlu meragukan kualitas konsultasi dan penanganan yang ditawarkan.</small></p>
+                        </div>
+                        <div>
+                            <h6 class = "title">Privasi kamu tetap terjaga</h6>
+                            <p class="content"><small class="text-muted">Tak perlu khawatir, semua percakapan dan diagnosis kesehatanmu dengan dokter di Halodoc akan terjaga keprivasiannya.</small></p>
+                        </div>
+                        <div>
+                            <h6 class = "title">Bekerja sebagai layanan kesehatan online terbaik dan terpercaya di Indonesia</h6>
+                            <p class="content"><small class="text-muted">Tidak sebatas tanya dokter saja, Halodoc juga menyajikan untukmu berbagai artikel informasi kesehatan dan berita kesehatan terkini. Ada banyak kategori kesehatan untuk berita terkini, tips dan rekomendasi, hingga pengetahuan umum yang pastinya bermanfaat agar kamu bisa lebih waspada dan peduli terhadap kesehatan diri sendiri maupun keluarga tercinta.</small></p>
+                        </div>
+                    </div>
+                    <div>
+                        <h6 class="title">Cara Menghubungi Dokter Online</h6>
+                        <p class="content"><small class="text-muted">Konsultasi dengan dokter Halodoc secara online bisa dilakukan dengan cepat. Hanya dengan tiga langkah mudah kamu bisa terhubung dengan dokter yang kamu butuhkan. Ada dokter spesialis gigi, hingga spesialis kulit yang bisa kamu hubungi 24 jam.</small></p>
+                    </div>
+                    <div class="tab">
+                        <div>
+                            <h6 class = "title">1. Langkah pertama :</h6>
+                            <p class="content"><small class="text-muted">Pilih dari dokter terbaik yang tersedia.</small></p>
+                        </div>
+                        <div>
+                            <h6 class = "title">2. Langkah kedua :</h6>
+                            <p class="content"><small class="text-muted">Pilih Anda ingin menggunakan media Gmail atau WhatsApp untuk berkonsultasi.</small></p>
+                        </div>
+                        <div>
+                            <h6 class = "title">3. Langkah terakhir :</h6>
+                            <p class="content"><small class="text-muted">Bicara dengan dokter. Saat kamu telah terhubung dengan dokter, silahkan jelaskan kondisi kamu dengan tenang dan jelas dengan tanya dokter halodoc.</small></p>
+                        </div>
+                    </div>
+                    <p class="content"><small class="text-muted">Tidak perlu khawatir, semua percakapan dan diagnosis kesehatanmu dengan dokter di Halodoc akan terjaga Meski dilakukan secara online, dapat dipastikan saat kamu Chat dengan dokter di Halodoc dapat dipastikan keluhan dan diskusi kesehatan kamu terjaga kerahasiaannya.</small></p><br><br>
+                </div>
+            </div>
+        </div>
+        <br>
+        <%- include('../layouts/footer.ejs'); %>
+
+        
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+        feather.replace()
+    </script>
+</body>
+</html>

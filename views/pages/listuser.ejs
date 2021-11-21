@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+            .card{
+                background: white;
+                border-radius: 10px;
+                box-shadow: 1px 2px 8px rgba(0, 0,0, 0.65);
+                height: auto;
+                width: auto;
+                margin: 9.2rem auto 9.2rem auto;
+            }
+
+		    #background {
+                background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+    		    position:fixed;
+    		    top:0;
+    		    width:100%;
+    		    height:100%;
+		    }
+            table {
+                width: 750px;
+                margin: 15px auto;
+            }
+            table thead {
+                background-color: #ddd;
+            }
+            table tr, table th, table td {
+                border: 1px solid #000;
+            }
+    </style>
+</head>
+<body>
+    <div id="background">
+        <div class="container">
+            <div class ="card text-center">
+                <h1 >User List</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th style="width: 30%;">ID</th>
+                            <th style="width: 30%;">Name</th>
+                            <th style="width: 30%;">Email</th>
+                            <th style="width: 10%;"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% userList.forEach((data) => { %>
+                            <tr>
+                                <td style="width: 30%;">
+                                    <%= data._id %>
+                                </td>
+                                <td style="width: 30%;">
+                                    <%= data.name %>
+                                </td>
+                                <td style="width: 30%;">
+                                    <%= data.email %>
+                                </td>
+                            </tr>
+                        <% }); %>
+                    </tbody>
+                </table>
+                <!-- <div>
+                    <a href="http://localhost:4000/cobacreate"><button class="btn btn-primary" type="button">Create User</button></a>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>

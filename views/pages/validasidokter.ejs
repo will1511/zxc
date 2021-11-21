@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HaloDoc || Admin</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+    <%- include('../layouts/navbaradmin.ejs'); %>
+    <div class="container">
+        <div class ="card text-center">
+            <%- include('../layouts/navbaradmin.ejs'); %>
+            <h1 >Validasi Dokter</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 10%;">Picture Passport</th>
+                        <th style="width: 10%;">Name</th>
+                        <th style="width: 10%;">Email</th>
+                        <th style="width: 10%;">Password</th>
+                        <th style="width: 10%;">Phone number</th>
+                        <th style="width: 10%;">Hospital</th>
+                        <th style="width: 10%;">Domicile</th>
+                        <th style="width: 10%;">Specialization</th>
+                        <th style="width: 10%;">Experience</th>
+                        <th style="width: 10%;">Certificate</th>
+                        <th style="width: 10%;">Academic</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% dokterList.forEach((data) => { %>
+                        <tr>
+                            <td style="width: 10%;">
+                                <%= data.photo %>
+                            </td>
+                            <td style="width: 10%;">
+                                <%= data.name %>
+                            </td>
+                            <td style="width: 10%;">
+                                <%= data.email %>
+                            </td>
+                            <td style="width: 10%;">
+                                <%= data.password %>
+                            </td>
+                            <td style="width: 10%;">
+                                <%= data.phonenumber %>
+                            </td>
+                            <td style="width: 10%;">
+                                <%= data.hospital %>
+                            </td>
+                            <td style="width: 10%;">
+                                <%= data.domisili %>
+                            </td>
+                            <td style="width: 10%;">
+                                <%= data.spesialis %>
+                            </td>
+                            <td style="width: 10%;">
+                                <%= data.pengalaman %>
+                            </td>
+                            <td style="width: 10%;">
+                                <%= data.sertifikat %>
+                            </td>
+                            <td style="width: 10%;">
+                                <%= data.akademik %>
+                            </td>
+                            <td style="width: 10%;">
+                                <a href="">ACCEPT</a>
+                            </td>
+                        </tr>
+                    <% }); %>
+                </tbody>
+            </table>
+            <div>
+                <a href=""><button class="btn btn-primary" type="button">DELETE</button></a>
+            </div>
+        </div>
+    </div>
+
+<!-- 
+    <div class="modal fade" id="exampleModalToggle3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" style="width:400px">
+          <div class="modal-content">
+            <div class="modal-header justify-content-center">
+              <h5 class="modal-title">HAPUS ARTIKEL</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div>
+                    <img src="img/dokter.png"  width="100%" height="200px"> 
+                    <h6 class="text-center">Nama Dokter : nama dokter</h6> 
+                </div>
+                <div style="margin: 5% 5%;">
+                    <h4>Apakah Anda yakin ingin menolak validasi dokter ini?</h4><br>
+                    <div>
+                        <a class="d-flex justify-content-center btn btn-success">
+                        YES
+                        </a>
+                    </div>
+                </div>
+            </div>
+            </div>
+          </div>
+        </div> -->
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script>
+            feather.replace()
+        </script>
+
+</body>
+</html>

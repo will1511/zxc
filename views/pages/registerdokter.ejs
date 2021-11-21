@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HaloDoc || Tanya Dokter, Periksa Kesehatan Sendiri</title>
+    
+    <link rel="stylesheet" href="css/style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        form {
+                width: 500px;
+                text-align: center;
+                margin: 15px auto;
+            }
+    </style>
+</head>
+<body>
+    <%- include('../layouts/navbar.ejs'); %>
+    <div class="container">
+        <div class ="card text-center" id="card-register-dokter">
+            <h1 >Registraton Form</h1><br>
+                <form action="/registerdokter" method="post">
+                    <label class="form-label">Full Name: </label><br>
+                    <input class="form-control" placeholder="Enter your full name" name="name" type="text" required /><br><br>
+                
+                    <label class="form-label">Email : </label><br>
+                    <input class="form-control" placeholder="Enter your email" maxlength="50" name="email" type="email" required /><br><br>
+                
+                    <label class="form-label">WhatsApp Phone Number : </b></label><br>
+                    <input class="form-control" type="text" pattern="\d\d\d\d-\d\d\d\d\d\d\d\d" name="phonenumber" placeholder="0000-00000000" required><br><br>
+                
+                    <label class="form-label">The name of the hospital where you currently work : </b></label><br>
+                    <input class="form-control" placeholder="Enter the name of the Hospital" maxlength="50" name="hospital" type="text" /><br><br>
+                
+                    <label class="form-label">Domicile : </b></label><br>
+                    <input class="form-control" placeholder="Enter your domicile" maxlength="50" name="domisili" type="text" /><br><br>
+                
+                    <label class="form-label">Specialization : </b></label><br>
+                    <input class="form-control" placeholder="Enter your specialization" maxlength="50" name="spesialis" type="text" required/><br><br>
+                
+                    <label class="form-label">Tell us your experience : </b></label><br>
+                    <input class="form-control" type="text" id="experience" maxlength="300" name="pengalaman" required></textarea><br><br>
+
+                    <label class="form-label">Password :</b></label><br>
+                    <input class="form-control" placeholder="Enter your password" maxlength="50" name="password" type="password" required/><br><br>
+                    
+                    <label class="form-label">Upload your passport photo (4x6) :</b></label><br>
+                    <input class="form-control" placeholder="Enter the url" name="photo" type="text" required/><br><br>
+
+                    <label class="form-label">Upload your certificate and academic transcript :</b></label><br>
+                    <input class="form-control" placeholder="Enter the url" name="dokumen" type="text" required/><br>
+
+                    <!-- <a data-bs-target="#exampleModalToggle3" data-bs-toggle="modal" data-bs-dismiss="modal"  class="btn btn-success" >REGISTER</a> -->
+                    <button data-bs-target="#exampleModalToggle3" data-bs-toggle="modal" data-bs-dismiss="modal"  class="btn btn-success" type="submit" style="width: 180px;">REGISTER</button>
+                    
+                    <!-- <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#ModalToggle" type="button" style="width: 150px;" >Register</button> -->
+                </form>
+        </div>
+    </div>
+    <br>
+    <br>
+
+        <%- include('../layouts/footer.ejs'); %>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+        feather.replace()
+    </script>
+</body>
+</html>
