@@ -10,8 +10,8 @@ const router = express.Router()
 
 
 
-// MongoClient.connect("mongodb://clara:clara123@cluster0-shard-00-00.mkqbl.mongodb.net:27017,cluster0-shard-00-01.mkqbl.mongodb.net:27017,cluster0-shard-00-02.mkqbl.mongodb.net:27017/myFirstDatabase?ssl=true&replicaSet=atlas-11ixiz-shard-0&authSource=admin&retryWrites=true&w=majority", { useUnifiedTopology: true })
-// .then(client => {
+MongoClient.connect("mongodb://clara:clara123@cluster0-shard-00-00.mkqbl.mongodb.net:27017,cluster0-shard-00-01.mkqbl.mongodb.net:27017,cluster0-shard-00-02.mkqbl.mongodb.net:27017/myFirstDatabase?ssl=true&replicaSet=atlas-11ixiz-shard-0&authSource=admin&retryWrites=true&w=majority", { useUnifiedTopology: true })
+.then(client => {
     console.log('Connected to Database')
     // untuk pilih DB
     const db = client.db('HaloDocDatabase')
@@ -266,7 +266,7 @@ const router = express.Router()
 
 
     
-// })
-// .catch(console.error)
+})
+.catch(console.error)
 
 module.exports = router;
